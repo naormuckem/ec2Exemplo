@@ -62,12 +62,16 @@ Para que o pipeline funcione, você precisa configurar as credenciais da AWS com
 
 Com os secrets configurados, o pipeline de CI/CD terá as permissões necessárias para executar o Terraform na sua conta da AWS.
 
+## Exercício
+
+Este repositório contém um exercício para os alunos adicionarem uma instância RDS com PostgreSQL à configuração Terraform existente. As instruções detalhadas podem ser encontradas no arquivo [EXERCISE.md](EXERCISE.md).
+
 ## Instruções
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <url-do-repositorio>
-    cd <nome-do-repositorio>
+    git clone https://github.com/AleTavares/ec2Exemplo.git
+    cd ec2Exemplo
     ```
 
 2.  **Inicialize o Terraform:**
