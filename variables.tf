@@ -17,3 +17,9 @@ variable "key_name" {
   description = "The name of the SSH key pair."
   default     = "terraform-key"
 }
+
+variable "db_password" {
+  description = "The password for the RDS instance."
+  type        = string
+  sensitive   = true
+}
