@@ -21,7 +21,7 @@ jobs:
       # repositories do not have access to secrets. This is a security measure by GitHub.
       # The plan step would require AWS credentials, which are stored as secrets.
       - name: Terraform Init
-        run: terraform init
+        run: terraform init -backend=false
 
       - name: Terraform Validate
         run: terraform validate
