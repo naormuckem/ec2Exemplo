@@ -20,8 +20,11 @@ jobs:
       # The terraform plan step is not being run here because pull requests from forked
       # repositories do not have access to secrets. This is a security measure by GitHub.
       # The plan step would require AWS credentials, which are stored as secrets.
+      - name: Comment out backend block in main.tf
+        run: sed -i '/backend "s3" {/,/}/s/^/#/' main.tf
+
       - name: Terraform Init
-        run: terraform init -backend=false
+        run: terraform init
 
       - name: Terraform Validate
         run: terraform validate
