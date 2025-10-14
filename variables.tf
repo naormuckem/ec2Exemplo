@@ -18,8 +18,8 @@ variable "key_name" {
   default     = "terraform-key"
 }
 
-variable "db_password" {
-  description = "The password for the RDS instance."
-  type        = string
-  sensitive   = true
-}
+# variable "db_password" {
+#   description = "The password for the RDS instance."
+#   type        = string
+#   sensitive   = true
+# }
